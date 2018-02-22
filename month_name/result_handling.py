@@ -1,5 +1,6 @@
 import sys
 import suds
+import os
 
 from random import randint
 from time import sleep
@@ -130,7 +131,7 @@ for (dirpath, dirnames, filenames) in walk(RESULT_FOLDER):
 
 result_frame = pd.DataFrame()
 for result in results_names:
-    temp =  pd.read_csv(RESULT_PATH + result, encoding='utf-8')
+    temp =  pd.read_csv(RESULT_FOLDER + result, encoding='utf-8')
     result_frame = result_frame.append(temp, ignore_index=True)
 
 main.columns = ['Locode', 'keyword','criteria_id','country']

@@ -1,6 +1,7 @@
 from googleads import adwords
 
-PATH_TO_YAML = "/home/victor/work/free/marichka_proj/googleads_septa.yaml"
+#path to yaml
+PATH_TO_YAML = "YOUR_PATH_TO_YAML/googleads.yaml"
 
 
 def build_sel(queries_list, criteria):

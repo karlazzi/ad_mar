@@ -213,3 +213,4 @@ for file in f:
 
     result_path = RESULT_FOLDER + "result_" + file
     df_new.to_csv(result_path, encoding = 'utf-8')
+    os.remove(file_name)
